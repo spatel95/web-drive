@@ -2,3 +2,4 @@
 v_env/
 __pycache__/
 pip/
+*/node_modules/
