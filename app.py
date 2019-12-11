@@ -1,7 +1,7 @@
 from flask import Flask, redirect
 from drive import DriveFiles
 app = Flask(__name__)
-files = DriveFiles.DriveFiles("/tmp")
+files = DriveFiles.DriveFiles("/tmp/drive")
 
 
 @app.route('/')
