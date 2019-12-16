@@ -33,6 +33,8 @@ fi
 log $LOG "installing flask"
 pip3 install --target=$PIP_INSTALL_DIR flask
 
+log $LOG "installing python-dotenv"
+pip3 install --target=$PIP_INSTALL_DIR python-dotenv
 
 
 
