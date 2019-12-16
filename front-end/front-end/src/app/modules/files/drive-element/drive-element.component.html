@@ -1,20 +1,11 @@
-<mat-accordion>
+<mat-accordion *ngFor="let file of fileList">
 
   <mat-expansion-panel>
     <mat-expansion-panel-header>
-      This is the expansion 1 title
+      {{file.name}}
     </mat-expansion-panel-header>
 
-    This the expansion 1 content
-
-  </mat-expansion-panel>
-
-  <mat-expansion-panel>
-    <mat-expansion-panel-header>
-      This is the expansion 2 title
-    </mat-expansion-panel-header>
-
-    This the expansion 2 content
+    <p>{{file.creationDate}} | {{file.size}}</p>
 
   </mat-expansion-panel>
 
