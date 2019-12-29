@@ -16,7 +16,9 @@ def empty():
 @app.route(config.REDIRECT_URL)
 def main():
     # files.list_file("aa","/")
-    return jsonify([f.serialize() for f in files.list_file("aa","/")])
+    response = jsonify([f.serialize() for f in files.list_file("aa","/")])
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    return response
 
 
 if __name__ == '__main__':
